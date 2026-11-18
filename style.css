@@ -76,6 +76,8 @@ body {
   font-size: 0.85rem;
   margin-bottom: 0.5rem;
 }
+/* Keep the lowercase x in the brand even inside uppercased text */
+.brand { text-transform: none; }
 
 /* Callout banner */
 .callout {
