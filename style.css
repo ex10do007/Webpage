@@ -33,6 +33,33 @@ body {
 .navbar a:hover { color: var(--accent); }
 .logo { font-weight: 700; }
 
+/* Blog pages */
+.blog-header {
+  position: sticky; top: 0; z-index: 10;
+  display: flex; justify-content: space-between; align-items: center;
+  flex-wrap: wrap; gap: 0.5rem 1.5rem;
+  padding: 1rem 2rem;
+  background: rgba(15, 23, 42, 0.9);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--surface);
+}
+.blog-header nav { display: flex; flex-wrap: wrap; gap: 0.4rem 1.25rem; }
+.blog-header a { color: var(--text); text-decoration: none; }
+.blog-header a:hover { color: var(--accent); }
+.blog-list { margin-top: 1.5rem; }
+.blog-card { display: block; color: var(--text); text-decoration: none; }
+.blog-card:hover h2 { color: var(--accent); }
+.blog-card h2 { font-size: 1.4rem; margin-bottom: 0.5rem; }
+.blog-card p { color: var(--muted); }
+.post-date { color: var(--muted); font-size: 0.9rem; }
+.blog-card .read-more { color: var(--accent); margin-top: 1rem; }
+.blog-article { max-width: 760px; }
+.blog-article .kicker a { color: var(--accent); text-decoration: none; }
+.blog-article .post-content { margin-top: 1.5rem; }
+.blog-article .post-content p { margin-bottom: 1rem; }
+.blog-article .post-content ul { padding-left: 1.5rem; margin: 0 0 1rem; }
+.blog-article .post-content li + li { margin-top: 0.4rem; }
+
 /* Hero */
 .hero {
   text-align: center;
@@ -160,6 +187,9 @@ body {
 /* Mobile layout */
 @media (max-width: 768px) {
   .nav-toggle { display: flex; }
+
+  .blog-header { padding: 1rem 1.25rem; }
+  .blog-header nav { gap: 0.4rem 0.9rem; }
 
   .navbar nav {
     /* Full-width dropdown below the bar, hidden until toggled */
